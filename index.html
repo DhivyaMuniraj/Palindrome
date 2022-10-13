@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Palindrome</h1>
+</body>
+<script>
+  var input="madam";
+// var check_type=typeof(a);
+if(typeof(input)!=="string"||input===""){
+  console.log("Enter the valid input")
+}
+else{
+  var result= palindrome(input);
+  var output=(result===input)?"Palindrome":"Not Palindrome";
+  console.log(output);
+   
+ 
+}
+//palindrome function
+
+function palindrome(input){
+  var reverse="";
+for(let i=input.length-1;i>=0;i--){
+ reverse+=input.charAt(i);
+}
+return reverse;
+}
+</script>
+</html>
